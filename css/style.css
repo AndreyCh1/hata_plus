@@ -263,11 +263,6 @@ main {
     border-top: 1px solid #cdcddd;
 }
 
-.main-menu li:hover > a {
-    color: #fff;
-    background-color: #fd8300;
-}
-
 .main-menu a {
     display: block;
     padding: 11px 15px;
@@ -275,6 +270,22 @@ main {
     line-height: 24px;
     color: #25252c;
     text-decoration: none;
+}
+
+.main-menu li:hover > a {
+    color: #fff;
+    background-color: #fd8300;
+}
+
+.submenu a{
+    padding: 11px 30px;
+    font-size: 14px;
+    color: #666666;
+}
+
+.submenu li:hover > a {
+    color: #666666;
+    background-color: #cecedd;
 }
 
 .footer {
@@ -289,6 +300,7 @@ main {
 
 .footer-block ul {
     width: 245px;
+    padding-left: 30px;
     list-style: none;
     margin: 0;
 }
