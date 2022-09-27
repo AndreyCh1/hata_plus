@@ -277,6 +277,17 @@ main {
     background-color: #fd8300;
 }
 
+.submenu a{
+    padding: 11px 30px;
+    font-size: 14px;
+    color: #666666;
+}
+
+.submenu li:hover > a {
+    color: #666666;
+    background-color: #cecedd;
+}
+
 .footer {
     background-color: #ededf5;
 }
