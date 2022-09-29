@@ -62,7 +62,7 @@ a:hover {
     align-items: center;
 }
 
-.contacts {
+.phones {
     display: inline-block;
     display: flex;
 }
@@ -73,13 +73,14 @@ a:hover {
     margin-right: 10px;
 }
 
-.contacts a {
+.phones__a--tel {
+    position: relative;
     font-weight: bold;
     text-decoration: none;
     color: #25252c;
 }
 
-.contacts p {
+.phones__p {
     margin: 0;
     font-size: 18px;
 }
