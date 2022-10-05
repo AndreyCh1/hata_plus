@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 
@@ -16,18 +19,18 @@
                 <div class="navigation1">
                     <nav>
                         <ul>
-                            <li><a href="">Головна</a></li>
-                            <li><a href="">Прокомпанію</a></li>
-                            <li><a href="">Нашібудівлі</a></li>
-                            <li><a href="">Акції</a></li>
-                            <li><a href="">Контакти</a></li>
+                            <li><a href="#">Головна</a></li>
+                            <li><a href="#">Прокомпанію</a></li>
+                            <li><a href="#">Нашібудівлі</a></li>
+                            <li><a href="#">Акції</a></li>
+                            <li><a href="#">Контакти</a></li>
                         </ul>
                     </nav>
-                    <div class="social-networks">
-                        <a href="#"><img class="social-facebook-img" src="images/social-facebook.png" alt=""></a>
-                        <a href="#"><img class="social-twitter-img" src="images/social-twitter.png" alt=""></a>
-                        <a href="#"><img class="social-instagram-img" src="images/social-instagram.png" alt=""></a>
-                    </div>
+                    <ul class="social_networks">
+                        <li><a href="#" class="fb"></a></li>
+                        <li><a href="#" class="tw"></a></li>
+                        <li><a href="#" class="in"></a></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -35,29 +38,30 @@
             <div class="title">
                 <div><a href="/"><img src="images/logo.png" alt=""></a></div>
                 <div class="phones">
-                    <img class="icon-phone-img" src="images/icon_phone.png" alt="">
                     <p class="phones__p">
                         <a href="tel:+380971002525" class="phones__a phones__a--tel">
                             +38(097) 100-25-25
                         </a>
                     </p>
-                    <p>
-                        <a href="tel:+380971002525" class="phones__a phones__a--tel">
+                    <p class="phones__p">
+                        <a href="tel:+380971002525" class="phones__a">
                             +38(097) 100-25-25
                         </a>
                     </p>
                 </div>
                 <div class="messengers">
-                    <div class="email">
-                        <img class="icon-email-img" src="images/icon_email.png" alt="">
-                        <p><a href="mailto:hataplus@hata.com.ua">hataplus@hata.com.ua</a></p>
-                    </div>
-                    <div class="skype">
-                        <img class="icon-skype-img" src="images/icon_skype.png" alt="">
-                        <a href="skupe:hataplus">hataplus</a>
-                    </div>
+                    <p class="email">
+                        <a href="mailto:hataplus@hata.com.ua" class="email_a email__a--env">
+                            hataplus@hata.com.ua
+                        </a>
+                    </p>
+                    <p class="skype">
+                        <a href="skupe:hataplus" class="skype_a skype__a--sk">
+                            hataplus
+                        </a>
+                    </p>
                 </div>
-                <div class="support"><a href="tel:+380971002525">Замовити дзвінок</a></div>
+                <div class="support-button"><a href="tel:+380971002525">Замовити дзвінок</a></div>
             </div>
         </div>
     </header>
@@ -71,7 +75,7 @@
     <div class="wrapper">
         <main>
             <section class="scope">
-                <h1><b>Компанія “Хата Плюс”</b></h1>
+                <h1>Компанія “Хата Плюс”</h1>
                 <p>Напевно кожен з нас не раз думав про те, щоб купити будинок котедж і насолоджуватися життям в
                     гармонії з природою. Дійсно, для багатьох жителів мегаполісу заміська нерухомість під містом
                     стала
@@ -146,6 +150,8 @@
                         <li><a href="#">Сервіс</a></li>
                         <li><a href="#">Новини</a></li>
                     </ul>
+                </nav>
+                <nav>
                     <ul>
                         <li><a href="#">Про компанію</a></li>
                         <li><a href="#">Страхування</a></li>
@@ -153,21 +159,28 @@
                     </ul>
                 </nav>
                 <div class="phones">
-                    <img class="icon-phone-img" src="images/icon_phone.png" alt="">
-                    <div>
-                        <p><a href="tel:+380971002525">+38(097) 100-25-25</a></p>
-                        <p><a href="tel:+380971002525">+38(097) 100-25-25</a></p>
-                    </div>
+                    <p class="phones__p">
+                        <a href="tel:+380971002525" class="phones__a phones__a--tel">
+                            +38(097) 100-25-25
+                        </a>
+                    </p>
+                    <p class="phones__p">
+                        <a href="tel:+380971002525" class="phones__a">
+                            +38(097) 100-25-25
+                        </a>
+                    </p>
                 </div>
                 <div class="messengers">
-                    <div class="email">
-                        <img class="icon-email-img" src="images/icon_email.png" alt="">
-                        <p><a href="mailto:hataplus@hata.com.ua">hataplus@hata.com.ua</a></p>
-                    </div>
-                    <div class="skype">
-                        <img class="icon-skype-img" src="images/icon_skype.png" alt="">
-                        <a href="skupe:hataplus">hataplus</a>
-                    </div>
+                    <p class="email">
+                        <a href="mailto:hataplus@hata.com.ua" class="email_a email__a--env">
+                            hataplus@hata.com.ua
+                        </a>
+                    </p>
+                    <p class="skype">
+                        <a href="skupe:hataplus" class="skype_a skype__a--sk">
+                            hataplus
+                        </a>
+                    </p>
                 </div>
             </div>
         </div>

@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: Arial, 'Roboto Slab', sans-serif;
 }
 
 a:hover {
@@ -32,10 +32,10 @@ a:hover {
 
 .navigation li {
     display: inline-block;
-    margin-right: 25px;
 }
 
 .navigation1 a {
+    margin-right: 25px;
     font-size: 14px;
     letter-spacing: 2px;
     line-height: 24px;
@@ -47,12 +47,51 @@ a:hover {
     color: #fd8300;
 }
 
-.social-twitter-img {
-    margin: 0 15px;
+.social_networks {
+    display: flex;
+    /* justify-content: space-between; */
 }
 
-.social-twitter-img:hover {
-    color: #fd8300;
+.social_networks a {
+    display: block;
+    background: url(../images/social_sprite.png);
+}
+
+a.fb {
+    width: 10px;
+    height: 19px;
+    background-position: 0 -21px;
+}
+
+.fb:hover {
+    width: 10px;
+    height: 19px;
+    background: url(../images/social_sprite.png);
+}
+
+a.tw {
+    width: 18px;
+    height: 15px;
+    background-position: -12px -22px;
+}
+
+.tw:hover {
+    width: 18px;
+    height: 15px;
+    background: url(../images/social_sprite.png) repeat -12px -1px;
+}
+
+a.in {
+    margin-right: 0;
+    width: 19px;
+    height: 19px;
+    background-position: -32px -21px;
+}
+
+.in:hover {
+    width: 19px;
+    height: 19px;
+    background: url(../images/social_sprite.png) repeat -32px 0;
 }
 
 .title {
@@ -62,85 +101,87 @@ a:hover {
     align-items: center;
 }
 
-.phones {
-    display: inline-block;
-    display: flex;
+.phones__p {
+    margin: 0;
+    font-size: 18px;
 }
 
-.icon-phone-img {
-    width: 16px;
-    height: 17px;
-    margin-right: 10px;
-}
-
-.phones__a--tel {
+.phones__a {
     position: relative;
     font-weight: bold;
     text-decoration: none;
     color: #25252c;
 }
 
-.phones__p {
-    margin: 0;
-    font-size: 18px;
-}
-
-.messengers {
-    padding-left: 30px;
-    border-left: 1px solid #e4e4ec;
+.phones__a--tel:before {
+    content: '';
+    position: absolute;
+    left: -28px;
+    width: 16px;
+    height: 17px;
+    background: url(../images/social_sprite.png) repeat -53px 0;
 }
 
 .email {
     display: flex;
-}
-
-.icon-email-img {
-    width: 17px;
-    height: 13px;
-    margin-right: 10px;
-}
-
-.email p {
     margin: 0;
 }
 
 .email a {
+    position: relative;
     font-size: 16px;
     line-height: 24px;
     color: #25252c;
 }
 
-.skype {
-    display: flex;
+.email__a--env:before {
+    content: '';
+    position: absolute;
+    left: -30px;
+    width: 17px;
+    height: 13px;
+    background: url(../images/social_sprite.png) repeat -71px 0;
 }
 
-.icon-skype-img {
-    width: 18px;
-    height: 19px;
-    margin-right: 10px;
+.skype {
+    display: flex;
+    margin: 0;
 }
 
 .skype a{
+    position: relative;
     font-size: 16px;
     line-height: 24px;
     text-decoration: none;
     color: #25252c;
 }
 
-.support {
+.skype__a--sk:before {
+    content: '';
+    position: absolute;
+    left: -30px;
+    width: 18px;
+    height: 19px;
+    background: url(../images/social_sprite.png) repeat -90px 0;
+}
+
+.support-button a {
+    display: block;
     width: 170px;
     padding: 12px 0;
     padding-left: 30px;
     border: 2px solid #fd8300;
     border-radius: 25px;
-}
-
-.support a {
     font-size: 16px;
     line-height: 24px;
     text-decoration: none;
     color: #25252c;
     font-weight: bold;
+}
+
+.support-button:hover > a {
+    color: #fff;
+    background-color: #fd8300;
 }
 
 .hero-img {
@@ -200,7 +241,7 @@ main {
     font-size: 30px;
     color: #24242b;
     font-weight: 700;
-    font-family: "Roboto Slab";
+    font-family: 'Roboto Slab', serif;
 }
 
 .scope p {
@@ -297,16 +338,20 @@ main {
     padding: 40px 0;
 }
 
+.footer-block nav {
+    display: inline-block;
+}
+
 .footer-block ul {
-    width: 245px;
-    padding-left: 30px;
+    /* width: 245px; */
+    padding: 0;
     list-style: none;
     margin: 0;
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
+    /* display: flex; */
+    /* justify-content: space-between; */
 }
 
 nav a{
