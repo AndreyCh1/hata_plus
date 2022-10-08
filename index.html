@@ -6,9 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 
@@ -38,8 +35,8 @@
             <div class="title">
                 <div><a href="/"><img src="images/logo.png" alt=""></a></div>
                 <div class="phones">
-                    <p class="phones__p">
-                        <a href="tel:+380971002525" class="phones__a phones__a--tel">
+                    <p class="phones__p phones__p--first">
+                        <a href="tel:+380971002525" class="title__a--icon phones__a phones__a--tel">
                             +38(097) 100-25-25
                         </a>
                     </p>
@@ -49,14 +46,14 @@
                         </a>
                     </p>
                 </div>
-                <div class="messengers">
+                <div class="messengers separator">
                     <p class="email">
-                        <a href="mailto:hataplus@hata.com.ua" class="email_a email__a--env">
+                        <a href="mailto:hataplus@hata.com.ua" class="title__a--icon email_a email__a--icon">
                             hataplus@hata.com.ua
                         </a>
                     </p>
                     <p class="skype">
-                        <a href="skupe:hataplus" class="skype_a skype__a--sk">
+                        <a href="skupe:hataplus" class="title__a--icon skype_a skype__a--icon">
                             hataplus
                         </a>
                     </p>
@@ -69,10 +66,10 @@
         <div class="wrapper">
             <p class="hero-title">Пропозиція місяця</p>
             <p class="hero-text">Ми пропонуємо великий вибір котеджів “під ключ” за самими низькими цінами!</p>
-            <p class="hero-price"><b>5999</b> грн / м2</p>
+            <p class="hero-price"><b>5999</b> грн / м<sup>2</sup></p>
         </div>
     </div>
-    <div class="wrapper">
+    <div class="wrapper main_wrapper">
         <main>
             <section class="scope">
                 <h1>Компанія “Хата Плюс”</h1>
@@ -89,38 +86,45 @@
                     альтанку і барбекю.</p>
                 <a href="#">Детальніше про нас</a>
             </section>
+            <hr>
             <h2>Популярні проекти</h2>
             <figure class="offers">
-                <figcaption>
-                    <picture>
-                        <source srcset="images/house_in_edmonton.webp" type="image/webp">
-                        <img src="images/house_in_edmonton.jpg" alt="">
-                    </picture>
-                    <a href="#">EDMONTON (338 м2)</a>
-                    <p>Загальна площа будови: 312 м2</p>
-                    <p>Кількість спалень: 4</p>
-                    <p>Гараж: 2 авто</p>
-                </figcaption>
-                <figcaption>
-                    <picture>
-                        <source srcset="images/house_in_montreal.webp" type="image/webp">
-                        <img src="images/house_in_montreal.jpg" alt="">
-                    </picture>
-                    <a href="#">MONTREAL (332 м2)</a>
-                    <p>Загальна площа будови: 312 м2</p>
-                    <p>Кількість спалень: 4</p>
-                    <p>Гараж: 2 авто</p>
-                </figcaption>
-                <figcaption>
-                    <picture>
-                        <source srcset="images/house_in_calgary.webp" type="image/webp">
-                        <img src="images/house_in_calgary.jpg" alt="">
-                    </picture>
-                    <a href="#">CALGARY (294 м2)</a>
-                    <p>Загальна площа будови: 272 м2</p>
-                    <p>Кількість спалень: 3</p>
-                    <p>Гараж: 2 авто</p>
-                </figcaption>
+                <figure>
+                    <figcaption>
+                        <picture>
+                            <source srcset="images/house_in_edmonton.webp" type="image/webp">
+                            <img src="images/house_in_edmonton.jpg" alt="">
+                        </picture>
+                        <a href="#">EDMONTON (338 м<sup>2</sup>)</a>
+                        <p>Загальна площа будови: 312 м<sup>2</sup></p>
+                        <p>Кількість спалень: 4</p>
+                        <p>Гараж: 2 авто</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <figcaption>
+                        <picture>
+                            <source srcset="images/house_in_montreal.webp" type="image/webp">
+                            <img src="images/house_in_montreal.jpg" alt="">
+                        </picture>
+                        <a href="#">MONTREAL (332 м<sup>2</sup>)</a>
+                        <p>Загальна площа будови: 312 м<sup>2</sup></p>
+                        <p>Кількість спалень: 4</p>
+                        <p>Гараж: 2 авто</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <figcaption>
+                        <picture>
+                            <source srcset="images/house_in_calgary.webp" type="image/webp">
+                            <img src="images/house_in_calgary.jpg" alt="">
+                        </picture>
+                        <a href="#">CALGARY (294 м<sup>2</sup>)</a>
+                        <p>Загальна площа будови: 272 м<sup>2</sup></p>
+                        <p>Кількість спалень: 3</p>
+                        <p>Гараж: 2 авто</p>
+                    </figcaption>
+                </figure>
             </figure>
         </main>
         <aside class="main-menu">
@@ -159,8 +163,8 @@
                     </ul>
                 </nav>
                 <div class="phones">
-                    <p class="phones__p">
-                        <a href="tel:+380971002525" class="phones__a phones__a--tel">
+                    <p class="phones__p phones__p--first">
+                        <a href="tel:+380971002525" class="title__a--icon phones__a phones__a--tel">
                             +38(097) 100-25-25
                         </a>
                     </p>
@@ -172,12 +176,12 @@
                 </div>
                 <div class="messengers">
                     <p class="email">
-                        <a href="mailto:hataplus@hata.com.ua" class="email_a email__a--env">
+                        <a href="mailto:hataplus@hata.com.ua" class="title__a--icon email_a email__a--icon">
                             hataplus@hata.com.ua
                         </a>
                     </p>
                     <p class="skype">
-                        <a href="skupe:hataplus" class="skype_a skype__a--sk">
+                        <a href="skupe:hataplus" class="title__a--icon skype_a skype__a--icon">
                             hataplus
                         </a>
                     </p>

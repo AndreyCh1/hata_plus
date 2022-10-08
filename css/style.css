@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Bold.woff2') format('woff2'),
+        url('../fonts/RobotoSlab-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
 body {
     margin: 0;
     font-family: Arial, 'Roboto Slab', sans-serif;
@@ -5,6 +14,16 @@ body {
 
 a:hover {
     cursor: url(../images/cursor.cur), auto;
+}
+
+sup {
+    font-size: 0.6em;
+}
+
+hr {
+    margin: 30px 0;
+    border: none;
+    border-top: 1px solid #e4e4ec;
 }
 
 .wrapper {
@@ -15,7 +34,7 @@ a:hover {
 
 .navigation {
     margin: 0;
-    padding: 20px;
+    padding: 15px 0;
     background-color: #1f1f56;
 }
 
@@ -49,11 +68,11 @@ a:hover {
 
 .social_networks {
     display: flex;
-    /* justify-content: space-between; */
 }
 
 .social_networks a {
-    display: block;
+    display: inline-block;
+    vertical-align: middle;
     background: url(../images/social_sprite.png);
 }
 
@@ -101,9 +120,26 @@ a.in {
     align-items: center;
 }
 
+.title__a--icon:before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: -29px;
+    background: url(../images/social_sprite.png)
+}
+
+.phones,
+.messengers {
+    padding-left: 48px;
+}
+
 .phones__p {
     margin: 0;
     font-size: 18px;
+}
+
+.phones__p--first {
+    margin-bottom: 10px;
 }
 
 .phones__a {
@@ -114,55 +150,56 @@ a.in {
 }
 
 .phones__a--tel:before {
-    content: '';
-    position: absolute;
-    left: -28px;
     width: 16px;
     height: 17px;
-    background: url(../images/social_sprite.png) repeat -53px 0;
+    background-position: -53px 0;
+}
+
+.separator {
+    position: relative;
+}
+
+.separator:before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    width: 1px;
+    height: 51px;
+    background-color: #e4e4ec;
 }
 
 .email {
-    display: flex;
     margin: 0;
+    margin-bottom: 12px;
 }
 
 .email a {
     position: relative;
     font-size: 16px;
-    line-height: 24px;
     color: #25252c;
 }
 
-.email__a--env:before {
-    content: '';
-    position: absolute;
-    left: -30px;
+.email__a--icon:before {
     width: 17px;
     height: 13px;
-    background: url(../images/social_sprite.png) repeat -71px 0;
+    background-position:-71px 0;
 }
 
 .skype {
-    display: flex;
     margin: 0;
 }
 
 .skype a{
     position: relative;
     font-size: 16px;
-    line-height: 24px;
     text-decoration: none;
     color: #25252c;
 }
 
-.skype__a--sk:before {
-    content: '';
-    position: absolute;
-    left: -30px;
+.skype__a--icon:before {
     width: 18px;
     height: 19px;
-    background: url(../images/social_sprite.png) repeat -90px 0;
+    background-position:-90px 0;
 }
 
 .support-button a {
@@ -220,24 +257,19 @@ a.in {
     font-size: 40px;
 }
 
-main {
+.main_wrapper {
     display: flex;
-    display: inline-block;
-    padding: 35px 0 45px;
-}
-
-.main-block {
-    display: flex;
-    display: inline-block;
-    width: 715px;
+    justify-content: space-between;
+    padding-top: 37px;
+    column-gap: 28px;
 }
 
 .scope {
-    max-width: 670px;
     color: #666;
 }
 
 .scope h1 {
+    margin: 0 0 25px;
     font-size: 30px;
     color: #24242b;
     font-weight: 700;
@@ -251,6 +283,7 @@ main {
 }
 
 .scope a {
+    display: block;
     font-size: 14px;
     line-height: 24px;
     text-decoration: underline;
@@ -261,8 +294,8 @@ main {
 .offers {
     display: flex;
     justify-content: space-between;
-    width: 715px;
     margin: 0;
+    padding-bottom: 46px;
 }
 
 .offers a {
@@ -279,9 +312,15 @@ main {
     color: #9999a6;
 }
 
+figure {
+    margin: 0;
+    column-gap: 28px;
+}
+
 .main-menu {
-    /* margin-left: 30px; */
-    width: 220px;
+    min-width: 220px;
+    overflow: hidden;
+    border-radius: 3px;
 }
 
 .main-menu p {
@@ -317,6 +356,10 @@ main {
     background-color: #fd8300;
 }
 
+.submenu li {
+    border: none;
+}
+
 .submenu a{
     padding: 11px 30px;
     font-size: 14px;
@@ -343,15 +386,10 @@ main {
 }
 
 .footer-block ul {
-    /* width: 245px; */
+    min-width: 220px;
     padding: 0;
     list-style: none;
     margin: 0;
-}
-
-nav {
-    /* display: flex; */
-    /* justify-content: space-between; */
 }
 
 nav a{
