@@ -63,6 +63,7 @@ hr {
 }
 
 .navigation a:hover {
+    text-decoration: none;
     color: #fd8300;
 }
 
@@ -351,7 +352,7 @@ figure {
     text-decoration: none;
 }
 
-.main-menu li:hover > a {
+.main-menu > ul > li:hover > a {
     color: #fff;
     background-color: #fd8300;
 }
