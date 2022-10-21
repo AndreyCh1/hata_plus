@@ -1,0 +1,38 @@
+.price_list {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.price_list > .topic {
+    list-style: none;
+    background-color: #1f1f56;
+    border-radius: 3px;
+}
+
+.price_list > .topic li{
+    font-size: 14px;
+    color: #fff;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+}
+
+.price_list ul {
+    display: table-row;
+    border-collapse: collapse;
+    background-color: #e4e4ec;
+    border-radius: 3px;
+}
+
+.price_list > ul > li {
+    display: table-cell;
+    padding: 16px 20px;
+    font-size: 14px;
+    color: #666;
+    border-top: 1px solid #cdcddd;
+}
+
+.topic ~ ul:hover li {
+    color: #ffffff;
+    background-color: #fd8300;
+}
