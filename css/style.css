@@ -154,8 +154,8 @@ a.in {
 .phones__a {
     position: relative;
     font-weight: bold;
-    text-decoration: none;
     color: #25252c;
+    text-decoration: none;
 }
 
 .phones__a--tel:before {
@@ -284,9 +284,15 @@ a.in {
     font-family: 'Roboto Slab', serif;
 }
 
+.scope h2 {
+    font-size: 14px;
+    color: #24242b;
+    font-weight: 700;
+    font-family: 'Roboto Slab', serif;
+}
+
 .scope p {
     font-size: 14px;
-    line-height: 24px;
     color: #666;
 }
 
@@ -294,7 +300,7 @@ a.in {
     font-size: 30px;
 }
 
-.scope a {
+.scope > a {
     font-size: 14px;
     line-height: 24px;
     text-decoration: underline;
@@ -302,18 +308,55 @@ a.in {
     font-weight: bold;
 }
 
+.scope > a:hover {
+    text-decoration: none;
+}
+
+.contacts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts div {
+    display: block;
+}
+
+.tel_numbers {
+    font-size: 18px;
+    color: #25252c;
+    font-weight: bold;
+}
+
 .offers {
     display: flex;
     justify-content: space-between;
-    margin: 0;
+    column-gap: 28px;
     padding-bottom: 46px;
 }
 
+.offers figure {
+    position: relative;
+    margin: 0;
+}
+
 .offers a {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+}
+
+.offers h3 {
+    margin: 0;
     font-size: 14px;
     line-height: 24px;
     font-weight: bold;
     color: #1f1f56;
+}
+
+.offers figure:hover h3 {
+    text-decoration: underline;
 }
 
 .offers p {
@@ -321,11 +364,6 @@ a.in {
     font-size: 13px;
     line-height: 18px;
     color: #9999a6;
-}
-
-figure {
-    margin: 0;
-    column-gap: 28px;
 }
 
 .main-menu {

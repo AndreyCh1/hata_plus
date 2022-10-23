@@ -1,13 +1,14 @@
 .price_list {
+    overflow: hidden;
     display: table;
     width: 100%;
     border-collapse: collapse;
+    border-radius: 3px;
 }
 
 .price_list > .topic {
     list-style: none;
     background-color: #1f1f56;
-    border-radius: 3px;
 }
 
 .price_list > .topic li{
@@ -21,15 +22,21 @@
     display: table-row;
     border-collapse: collapse;
     background-color: #e4e4ec;
-    border-radius: 3px;
+}
+
+.price_list ul:nth-child(n + 3) {
+    border-top: 1px solid #cdcddd;
 }
 
 .price_list > ul > li {
     display: table-cell;
-    padding: 16px 20px;
+    padding: 12px 20px;
     font-size: 14px;
     color: #666;
-    border-top: 1px solid #cdcddd;
+}
+
+.price_list li:last-child {
+    text-align: right;
 }
 
 .topic ~ ul:hover li {
