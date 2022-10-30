@@ -315,16 +315,29 @@ a.in {
 .contacts {
     display: flex;
     justify-content: space-between;
+
 }
 
-.contacts div {
-    display: block;
+.contact_info {
+    display: flex;
+    justify-content: space-between;
+    max-width: 640px;
 }
 
-.tel_numbers {
+.contact_info div {
+    margin-right: 88px;
+}
+
+.contacts .tel_numbers {
+    margin: 0;
+    margin-bottom: 10px;
     font-size: 18px;
     color: #25252c;
     font-weight: bold;
+}
+
+.requisites {
+    margin-left: 74px;
 }
 
 .offers {
