@@ -379,9 +379,10 @@ a.in {
 }
 
 .main-menu {
+    position: sticky;
+    align-self: start;
+    top: 37px;
     min-width: 220px;
-    overflow: hidden;
-    border-radius: 3px;
 }
 
 .main-menu p {
@@ -392,8 +393,8 @@ a.in {
 }
 
 .main-menu nav {
-    position: sticky;
-    top: 0;
+    overflow: hidden;
+    border-radius: 3px;
 }
 
 .main-menu ul {
