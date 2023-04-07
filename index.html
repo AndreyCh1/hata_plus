@@ -14,27 +14,32 @@
         <div class="navigation">
             <div class="wrapper">
                 <div class="navigation1">
-                    <nav>
-                        <ul>
+                    <div class="burger_menu" id="burger">
+                        <span class="top"></span>
+                        <span class="middle"></span>
+                        <span class="bottom"></span>
+                    </div>
+                    <nav class="top_menu" id="topMenu">
+                        <ul class="list">
                             <li><a href="#">Головна</a></li>
-                            <li><a href="#">Прокомпанію</a></li>
+                            <li><a href="#">Про компанію</a></li>
                             <li><a href="price.html">Наші будівлі</a></li>
                             <li><a href="#">Акції</a></li>
                             <li><a href="contacts.html">Контакти</a></li>
                         </ul>
                     </nav>
-                    <ul class="social_networks">
-                        <li><a href="#" class="fb"></a></li>
-                        <li><a href="#" class="tw"></a></li>
-                        <li><a href="#" class="in"></a></li>
+                    <ul class="social_networks list">
+                        <li class="fb"><a href="#"></a></li>
+                        <li class="tw"><a href="#"></a></li>
+                        <li class="in"><a href="#"></a></li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="wrapper">
-            <div class="title">
-                <div><a href="index.html"><img src="images/logo.png" alt=""></a></div>
-                <div class="phones">
+            <div class="title flex_between">
+                <div class="logo column"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
+                <div class="phones column">
                     <p class="phones__p phones__p--first">
                         <a href="tel:+380971002525" class="title__a--icon phones__a phones__a--tel">
                             +38(097) 100-25-25
@@ -46,7 +51,7 @@
                         </a>
                     </p>
                 </div>
-                <div class="messengers separator">
+                <div class="messengers separator column">
                     <p class="email">
                         <a href="mailto:hataplus@hata.com.ua" class="title__a--icon email_a email__a--icon">
                             hataplus@hata.com.ua
@@ -58,15 +63,15 @@
                         </a>
                     </p>
                 </div>
-                <div class="support_button"><a href="tel:+380971002525">Замовити дзвінок</a></div>
+                <div class="support_button column"><a href="tel:+380971002525">Замовити дзвінок</a></div>
             </div>
         </div>
     </header>
-    <div class="hero-img">
+    <div class="hero_img">
         <div class="wrapper">
-            <p class="hero-title">Пропозиція місяця</p>
-            <p class="hero-text">Ми пропонуємо великий вибір котеджів “під ключ” за самими низькими цінами!</p>
-            <p class="hero-price"><b>5999</b> грн / м<sup>2</sup></p>
+            <p class="hero_title">Пропозиція місяця</p>
+            <p class="hero_text">Ми пропонуємо великий вибір котеджів “під ключ” за самими низькими цінами!</p>
+            <p class="hero_price"><b>5999</b> грн / м<sup>2</sup></p>
         </div>
     </div>
     <div class="wrapper main_wrapper flex_between">
@@ -76,19 +81,21 @@
                 <p>Напевно кожен з нас не раз думав про те, щоб купити будинок котедж і насолоджуватися життям в
                     гармонії з природою. Дійсно, для багатьох жителів мегаполісу заміська нерухомість під містом
                     стала
-                    справжньою віддушиною і порятунком від сумній життя в багатоповерхівках спальних районів.</p>
+                    справжньою віддушиною і порятунком від сумній життя в багатоповерхівках спальних районів.
+                </p>
                 <p>Крім цього, заміські котеджі “Хата Плюс” від забудовника — це найбільш вигідна цінова пропозиція
                     по
                     співвідношенню площа / вартість, оскільки у вартість домоволодіння входить також земельна
                     ділянка,
                     на якому можна не тільки посадити сад, але облаштувати зону відпочинку, спорудити сауну,
                     поставити
-                    альтанку і барбекю.</p>
+                    альтанку і барбекю.
+                </p>
                 <a href="#">Детальніше про нас</a>
             </section>
             <hr>
             <h2>Популярні проекти</h2>
-            <div class="offers">
+            <div class="offers flex_between">
                 <figure>
                     <figcaption>
                         <a href="#"></a>
@@ -130,13 +137,13 @@
                 </figure>
             </div>
         </main>
-        <aside class="main-menu">
+        <aside class="main_menu">
+            <p>Категорії проектів</p>
             <nav>
-                <p>Категорії проектів</p>
-                <ul class="main_menu_ul">
+                <ul class="main_menu_ul list">
                     <li><a href="#">Генеральний план</a></li>
                     <li><a href="#">Навколишнє середовище</a>
-                        <ul class="submenu">
+                        <ul class="submenu list">
                             <li><a href="#">Продані</a></li>
                             <li><a href="#">Заброньованні</a></li>
                             <li><a href="#">В процесі будівництва</a></li>
@@ -152,23 +159,23 @@
     </div>
     <footer class="footer">
         <div class="wrapper">
-            <div class="footer-block">
-                <nav>
-                    <ul>
+            <div class="footer_block flex_between">
+                <nav class="column">
+                    <ul class="list">
                         <li><a href="#">Будинки</a></li>
                         <li><a href="#">Інфраструктура</a></li>
                         <li><a href="#">Сервіс</a></li>
                         <li><a href="#">Новини</a></li>
                     </ul>
                 </nav>
-                <nav>
-                    <ul>
+                <nav class="column">
+                    <ul class="list">
                         <li><a href="#">Про компанію</a></li>
                         <li><a href="#">Страхування</a></li>
                         <li><a href="#">Контакти</a></li>
                     </ul>
                 </nav>
-                <div class="phones">
+                <div class="phones column">
                     <p class="phones__p phones__p--first">
                         <a href="tel:+380971002525" class="title__a--icon phones__a phones__a--tel">
                             +38(097) 100-25-25
@@ -180,7 +187,7 @@
                         </a>
                     </p>
                 </div>
-                <div class="messengers">
+                <div class="messengers column">
                     <p class="email">
                         <a href="mailto:hataplus@hata.com.ua" class="title__a--icon email_a email__a--icon">
                             hataplus@hata.com.ua
@@ -194,12 +201,18 @@
                 </div>
             </div>
         </div>
-        <div class="footer-copy">
+        <div class="footer_copy">
             <div class="wrapper">
                 <p>&copy; Будівельна компанія “Хата Плюс” 2018.</p>
             </div>
         </div>
     </footer>
+    <script>
+        burger.onclick = function() {
+            burger.classList.toggle("burger_menu_open")
+            topMenu.classList.toggle("top_menu_open")
+        }
+    </script>
 </body>
 
 </html>

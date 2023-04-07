@@ -1,45 +1,67 @@
 .price_list {
-    overflow: hidden;
-    display: table;
-    width: 100%;
-    border-collapse: collapse;
-    border-radius: 3px;
+    overflow-x: scroll;
+    padding-bottom: 5rem;
 }
 
-.price_list > .topic {
+.price_list::-webkit-scrollbar {
+    height: 10rem;
+    background-color: #ededf5;
+}
+.price_list::-webkit-scrollbar-thumb {
+    background-color: #dcdce6;
+}
+
+.price_list_table {
+    overflow: hidden;
+    display: table;
+    width: 960rem;
+    border-collapse: collapse;
+    border-radius: 3rem;
+}
+
+.price_list_table > .topic {
     list-style: none;
     background-color: #1f1f56;
 }
 
-.price_list > .topic li{
-    font-size: 14px;
+.price_list_table > .topic li{
+    font-size: 14rem;
     color: #fff;
     font-weight: 700;
     font-family: "Roboto Slab";
 }
 
-.price_list ul {
+.price_list_table ul {
     display: table-row;
     border-collapse: collapse;
     background-color: #e4e4ec;
 }
 
-.price_list ul:nth-child(n + 3) {
-    border-top: 1px solid #cdcddd;
+.price_list_table ul:nth-child(n + 3) {
+    border-top: 1rem solid #cdcddd;
 }
 
-.price_list > ul > li {
+.price_list_table > ul > li {
     display: table-cell;
-    padding: 12px 20px;
-    font-size: 14px;
+    padding: 12rem 20rem;
+    font-size: 14rem;
     color: #666;
 }
 
-.price_list li:last-child {
+.price_list_table li:last-child {
     text-align: right;
 }
 
 .topic ~ ul:hover li {
     color: #ffffff;
     background-color: #fd8300;
+}
+
+@media screen and (min-width: 797px){
+    .price_list {
+        overflow-x: visible;
+    }
+    .price_list_table{
+        width: 100%;
+    }
 }

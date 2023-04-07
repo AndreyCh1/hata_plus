@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/table.css">
-    <title>Document</title>
+    <title>Price</title>
 </head>
 
 <body>
@@ -15,27 +15,32 @@
         <div class="navigation">
             <div class="wrapper">
                 <div class="navigation1">
-                    <nav>
-                        <ul>
+                    <div class="burger_menu" id="burger">
+                        <span class="top"></span>
+                        <span class="middle"></span>
+                        <span class="bottom"></span>
+                    </div>
+                    <nav class="top_menu" id="topMenu">
+                        <ul class="list">
                             <li><a href="/">Головна</a></li>
-                            <li><a href="#">Прокомпанію</a></li>
+                            <li><a href="#">Про компанію</a></li>
                             <li><a href="price.html">Наші будівлі</a></li>
                             <li><a href="#">Акції</a></li>
                             <li><a href="contacts.html">Контакти</a></li>
                         </ul>
                     </nav>
-                    <ul class="social_networks">
-                        <li><a href="#" class="fb"></a></li>
-                        <li><a href="#" class="tw"></a></li>
-                        <li><a href="#" class="in"></a></li>
+                    <ul class="social_networks list">
+                        <li class="fb"><a href="#"></a></li>
+                        <li class="tw"><a href="#"></a></li>
+                        <li class="in"><a href="#"></a></li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="wrapper">
-            <div class="title">
-                <div><a href="/"><img src="images/logo.png" alt=""></a></div>
-                <div class="phones">
+            <div class="title flex_between">
+                <div class="logo column"><a href="/"><img src="images/logo.png" alt=""></a></div>
+                <div class="phones column">
                     <p class="phones__p phones__p--first">
                         <a href="tel:+380971002525" class="title__a--icon phones__a phones__a--tel">
                             +38(097) 100-25-25
@@ -47,7 +52,7 @@
                         </a>
                     </p>
                 </div>
-                <div class="messengers separator">
+                <div class="messengers separator column">
                     <p class="email">
                         <a href="mailto:hataplus@hata.com.ua" class="title__a--icon email_a email__a--icon">
                             hataplus@hata.com.ua
@@ -59,7 +64,7 @@
                         </a>
                     </p>
                 </div>
-                <div class="support_button"><a href="tel:+380971002525">Замовити дзвінок</a></div>
+                <div class="support_button column"><a href="tel:+380971002525">Замовити дзвінок</a></div>
             </div>
         </div>
     </header>
@@ -70,55 +75,57 @@
                 <p>Кожен котедж оснащений комфортабельними меблями, супутниковим ТБ, душем, туалетом, холодильником, Wi-Fi-зоною.<br>
                    Послуга може бути надана кожному з наших гостей, незалежно від терміну проживання в готелі та категорії обраного номера.</p>
                 <div class="price_list">
-                    <ul class="topic" >
-                        <li>Назва котеджу</li>
-                        <li>Загальна площа м.кв.</li>
-                        <li>Кількість кімнат</li>
-                        <li>Гараж</li>
-                        <li>Ціна</li>
-                    </ul>
-                    <ul>
-                        <li>Hamilton Paradise</li>
-                        <li>392</li>
-                        <li>5</li>
-                        <li>2</li>
-                        <li>45 000 $</li>
-                    </ul>
-                    <ul>
-                        <li>Montreal Hourse House</li>
-                        <li>295</li>
-                        <li>3</li>
-                        <li>1</li>
-                        <li>29 750 $</li>
-                    </ul>
-                    <ul>
-                        <li>Edmenton</li>
-                        <li>338</li>
-                        <li>2</li>
-                        <li>2</li>
-                        <li>53 200 $</li>
-                    </ul>
-                    <ul>
-                        <li>Calgary Skyliner</li>
-                        <li>249</li>
-                        <li>2</li>
-                        <li>1</li>
-                        <li>31 000 $</li>
-                    </ul>
-                    <ul>
-                        <li>Quebec Enterprices</li>
-                        <li>392</li>
-                        <li>4</li>
-                        <li>2</li>
-                        <li>110 000 $</li>
-                    </ul>
-                    <ul>
-                        <li>Alberta Maria</li>
-                        <li>349</li>
-                        <li>1</li>
-                        <li>3</li>
-                        <li>67 500 $</li>
-                    </ul>
+                    <div class="price_list_table">
+                        <ul class="topic" >
+                            <li>Назва котеджу</li>
+                            <li>Загальна площа м.кв.</li>
+                            <li>Кількість кімнат</li>
+                            <li>Гараж</li>
+                            <li>Ціна</li>
+                        </ul>
+                        <ul>
+                            <li>Hamilton Paradise</li>
+                            <li>392</li>
+                            <li>5</li>
+                            <li>2</li>
+                            <li>45 000 $</li>
+                        </ul>
+                        <ul>
+                            <li>Montreal Hourse House</li>
+                            <li>295</li>
+                            <li>3</li>
+                            <li>1</li>
+                            <li>29 750 $</li>
+                        </ul>
+                        <ul>
+                            <li>Edmenton</li>
+                            <li>338</li>
+                            <li>2</li>
+                            <li>2</li>
+                            <li>53 200 $</li>
+                        </ul>
+                        <ul>
+                            <li>Calgary Skyliner</li>
+                            <li>249</li>
+                            <li>2</li>
+                            <li>1</li>
+                            <li>31 000 $</li>
+                        </ul>
+                        <ul>
+                            <li>Quebec Enterprices</li>
+                            <li>392</li>
+                            <li>4</li>
+                            <li>2</li>
+                            <li>110 000 $</li>
+                        </ul>
+                        <ul>
+                            <li>Alberta Maria</li>
+                            <li>349</li>
+                            <li>1</li>
+                            <li>3</li>
+                            <li>67 500 $</li>
+                        </ul>
+                    </div>
                 </div>
                 <p>Час заселення з 14-00, виїзд до 12-00.<br>
                     Можлива погодинна оренда котеджу (мінімальний час оренди - 5 днів).</p>
@@ -126,7 +133,7 @@
             </section>
             <hr>
             <h2>Популярні проекти</h2>
-            <div class="offers">
+            <div class="offers flex_between">
                 <figure>
                     <figcaption>
                         <a href="#"></a>
@@ -184,23 +191,23 @@
     </div>
     <footer class="footer">
         <div class="wrapper">
-            <div class="footer-block">
-                <nav>
-                    <ul>
+            <div class="footer_block flex_between">
+                <nav class="column">
+                    <ul class="list">
                         <li><a href="#">Будинки</a></li>
                         <li><a href="#">Інфраструктура</a></li>
                         <li><a href="#">Сервіс</a></li>
                         <li><a href="#">Новини</a></li>
                     </ul>
                 </nav>
-                <nav>
-                    <ul>
+                <nav class="column">
+                    <ul class="list">
                         <li><a href="#">Про компанію</a></li>
                         <li><a href="#">Страхування</a></li>
                         <li><a href="#">Контакти</a></li>
                     </ul>
                 </nav>
-                <div class="phones">
+                <div class="phones column">
                     <p class="phones__p phones__p--first">
                         <a href="tel:+380971002525" class="title__a--icon phones__a phones__a--tel">
                             +38(097) 100-25-25
@@ -212,7 +219,7 @@
                         </a>
                     </p>
                 </div>
-                <div class="messengers">
+                <div class="messengers column">
                     <p class="email">
                         <a href="mailto:hataplus@hata.com.ua" class="title__a--icon email_a email__a--icon">
                             hataplus@hata.com.ua
@@ -226,12 +233,18 @@
                 </div>
             </div>
         </div>
-        <div class="footer-copy">
+        <div class="footer_copy">
             <div class="wrapper">
                 <p>&copy; Будівельна компанія “Хата Плюс” 2018.</p>
             </div>
         </div>
     </footer>
+    <script>
+        burger.onclick = function() {
+            burger.classList.toggle("burger_menu_open")
+            topMenu.classList.toggle("top_menu_open")
+        }
+    </script>
 </body>
 
 </html>
