@@ -6,10 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
     <title>contacts</title>
 </head>
 
-<body>
+<body id="body">
     <header class="head">
         <div class="navigation">
             <div class="wrapper">
@@ -17,7 +21,7 @@
                     <div class="burger_menu" id="burger">
                         <span class="top"></span>
                         <span class="middle"></span>
-                        <span class="bottom"></span>
+                        <span class="bottom"></span>l
                     </div>
                     <nav class="top_menu" id="topMenu">
                         <ul class="list">
@@ -181,15 +185,21 @@
         </div>
         <div class="footer_copy">
             <div class="wrapper">
-                <p>&copy; Будівельна компанія “Хата Плюс” 2018.</p>
+                <p id="footerCopy">&copy; Будівельна компанія “Хата Плюс” 2018.</p>
             </div>
         </div>
     </footer>
+    <div id="background"></div>
     <script>
-        burger.onclick = function () {
+        function top_menu_toggle () {
             burger.classList.toggle("burger_menu_open")
             topMenu.classList.toggle("top_menu_open")
+            background.classList.toggle("background_open")
+            body.classList.toggle("body_no_scroll")
+            footerCopy.classList.toggle("footer-copy")
         }
+        burger.onclick = top_menu_toggle
+        background.onclick = top_menu_toggle
     </script>
 </body>
 
