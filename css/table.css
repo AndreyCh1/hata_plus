@@ -14,7 +14,8 @@
 .price_list_table {
     overflow: hidden;
     display: table;
-    width: 960rem;
+    min-width: 763rem;
+    width: 100%;
     border-collapse: collapse;
     border-radius: 3rem;
 }
@@ -46,6 +47,14 @@
     padding: 12rem 20rem;
     font-size: 14rem;
     color: #666;
+}
+
+.price_list_table li:first-child {
+    min-width: 190px;
+}
+
+.price_list_table li:last-child {
+    min-width: 95px;
 }
 
 .price_list_table li:last-child {
