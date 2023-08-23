@@ -100,7 +100,6 @@ hr {
     justify-content: space-between;
 }
 
-
 .burger_menu {
     position: relative;
     width: 40rem;
@@ -136,7 +135,6 @@ hr {
 }
 
 .burger_menu_open {
-    /* position: relative; */
     width: 40rem;
     height: 24rem;
 }
@@ -144,7 +142,6 @@ hr {
 .burger_menu_open .top {
     top: 40%;
     width: 82%;
-    /* transform: translateY(-50%); */
     transform: rotate(45deg);
 }
 
@@ -155,7 +152,6 @@ hr {
 .burger_menu_open .bottom {
     top: 40%;
     width: 82%;
-    /* transform: translateY(-50%); */
     transform: rotate(-45deg);
 }
 
@@ -182,18 +178,6 @@ hr {
 .top_menu_open ul li:last-child {
     border-bottom: 0;
 }
-
-.top_menu_open p {
-    margin: 0;
-    font-size: 13rem;
-    line-height: 18rem;
-    color: #9999a6;
-    text-align: center;
-}
-
-/* .top_menu_open ul > li {
-    display: block;
-} */
 
 .list {
     margin: 0;
@@ -269,14 +253,6 @@ hr {
     box-shadow: 0 0 5rem rgba(0, 0, 0, 0.1);
 }
 
-.title__a--icon:before {
-    content: '';
-    position: absolute;
-    top: 2rem;
-    left: -30rem;
-    background: url(../images/social_sprite.png)
-}
-
 .logo img {
     width: 100%;
 }
@@ -300,6 +276,14 @@ hr {
     font-weight: bold;
     color: #25252c;
     text-decoration: none;
+}
+
+.title__a--icon:before {
+    content: '';
+    position: absolute;
+    top: 2rem;
+    left: -30rem;
+    background: url(../images/social_sprite.png)
 }
 
 .phones__a--tel:before {
@@ -356,8 +340,7 @@ hr {
     background-position: -90px 0;
 }
 
-.title .support_button { /*убрать .title
-    /* width: 200rem; */
+.title .support_button {
     text-align: center;
 }
 
@@ -821,20 +804,14 @@ nav a:hover {
     z-index: 3;
 }
 
-@media screen and (min-width: 425px) {}
+@media screen and (min-width: 425px) { /* всегда должент быть? */
+    
+}
 
 @media screen and (min-width: 501px) {
     .input_flex {
         justify-content: flex-start;
     }
-
-    .submit_button {
-        /* margin-right: 30rem; */
-    }
-
-    /* .checkbox+label {
-        padding: 0 25rem;
-    } */
 
     .checkbox+label:before {
         top: 2px;
