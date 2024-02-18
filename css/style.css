@@ -442,13 +442,13 @@ hr {
 .scope>a {
     font-size: 14rem;
     line-height: 24rem;
-    text-decoration: underline;
+    text-decoration: none;
     color: #fd8300;
     font-weight: bold;
 }
 
 .scope>a:hover {
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .h1_center {
@@ -670,7 +670,7 @@ hr {
     width: 100%;
     box-sizing: border-box;
     border-radius: 3rem;
-    background-color: #ffffff;
+    background-color: #fff;
     border: 1px solid #c5c5d4;
     outline: none;
 }
@@ -690,6 +690,7 @@ hr {
     height: 105rem;
     min-height: 105rem;
     max-height: 300rem;
+    font-family: Arial;
 }
 
 .input_flex {
